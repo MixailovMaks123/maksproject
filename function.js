@@ -14,28 +14,50 @@
 //     return(a+b);
 // }
 
-let calc = (a,b) => a+b
+// let calc = (a,b) => a+b
 
-console.log(calc (3,4));
+// console.log(calc (3,4));
 
-console.log(calc (7,8));
+// console.log(calc (7,8));
 
 
-function retVar(){
-    let num = 50;
-    return num;
+// function retVar(){
+//     let num = 50;
+//     return num;
+// }
+
+// let anotherNum = retVar();
+// console.log(anotherNum);
+
+// let str="test";
+// console.log(str.length);
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+
+// let twelvw = "12.2px";
+
+// // console.log(Math.round(twelvw));
+// console.log(parseInt(twelvw));
+// console.log(parseFloat(twelvw));
+
+function first(){
+    setTimeout( function(){
+        console.log(1);
+    }, 500);
 }
 
-let anotherNum = retVar();
-console.log(anotherNum);
+function second(){
+    console.log(2);
+}
 
-let str="test";
-console.log(str.length);
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
+first();
+second();
 
-let twelvw = "12.2px";
+function learJS(lang, colback){
+    console.log("я учу " + lang);
+    colback();
+}
 
-// console.log(Math.round(twelvw));
-console.log(parseInt(twelvw));
-console.log(parseFloat(twelvw));
+learJS("JavaScript", function(){
+    console.log("я прошел 3 урок!");
+})
