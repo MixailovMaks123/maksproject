@@ -128,13 +128,60 @@
 // sheckAge(age);
 
 
-let agreement = confirm('Вы согластны?');
+// let agreement = confirm('Вы согластны?');
 
-let fun = (agreement)?
-    () => alert('Вы согласились.'):
-    () => alert('Вы отменили выполнение.');
+// let fun = (agreement)?
+//     () => alert('Вы согласились.'):
+//     () => alert('Вы отменили выполнение.');
 
-fun();
+// fun();
+
+
+    // let user;
+
+    // user = {
+    //     name = "John",
+    //     surname = "Smith",
+    // }
+
+    // user.name = "pepe";
+
+    // delete user.name;
+
+
+    // let num1 = +prompt('ведите число', '');
+    // let num2 = +prompt('ведите число', '');
+
+    // let sum = num1+num2;
+
+    // alert( sum.toFixed(1));
+
+
+    let arr = [
+        {name: 'Вася', age: 36},
+        {name: 'Коля', age: 16},
+        {name: 'Ваня', age: 24},
+    ]
+
+    let resultOne = arr.find(function(item,index,array){
+        return item.name == 'Ваня';
+    });
+
+    console.log(resultOne);
+
+
+    
+    let arr = [
+        {name: 'Вася', age: 36},
+        {name: 'Коля', age: 16},
+        {name: 'Ваня', age: 24},
+    ]
+
+    let resultOne = arr.findIndex(function(item,index,array){
+        return item.name == 'Ваня';
+    });
+
+    console.log(resultOne);
 
 
 
